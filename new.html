@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>  
+    <!--Minified Materializecss JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            header, main, footer, nav {
+                padding-left: 300px;
+            }
+
+            @media only screen and (max-width : 992px) {
+                header, main, footer, nav {
+                    padding-left: 0;
+                }
+            }
+            iframe { position: absolute; width: 100%; height: 45%; z-index: -1; }
+        </style>
+        <!-- JQuery -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            $(document).ready(function(){
+                $('.sidenav').sidenav();
+                $('.fixed-action-btn').floatingActionButton({
+                    toolbarEnabled: 'true',
+                    hoverEnabled: false
+                });
+                $('.dropdown-trigger').dropdown();
+            });
+        </script>
+        <title>Noice</title>
+    </head>
+    <body>
+        <nav>
+            <div class="nav-wrapper">
+                <div class="navbar-fixed light-blue">
+                <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <a href="#" class="brand-logo"><img src="https://upload.wikimedia.org/wikipedia/en/e/ed/Nyan_cat_250px_frame.PNG" height="65" width="65" alt=""></a>
+                    <ul id="nav-mobile" class="right hide-on-small-and-down">
+                        <li><a href="#"><i class="fa-brands fa-spotify"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-soundcloud"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-apple"></i></a></li>
+                    </ul>                
+                </div>
+            </div>
+        </nav>
+        <ul id="slide-out" class="sidenav sidenav-fixed">
+            <li><div class="user-view">
+                <div class="background">
+                    <img src="https://cdn.britannica.com/78/43678-050-F4DC8D93/Starry-Night-canvas-Vincent-van-Gogh-New-1889.jpg">
+                </div>
+                <a href="#user"><img class="circle" src="https://www.looper.com/img/gallery/the-stewie-griffin-theory-that-changes-everything-about-family-guy/intro-1625887696.webp"></a>
+                <a href="#name"><span class="white-text name">Stewie</span></a>
+                <a href="#email"><span class="white-text email">Heystewie@gmail.com</span></a>
+            </div>
+            </li>
+            <li><a href="#!" class="waves-effect"><i class="material-icons">cloud</i>Hey Stewie</a></li>
+            <li><div class="divider"></div></li>
+            <li><a class="subheader">Social Media</a></li>
+            <li><a href="#"><i class="fa fa-brands fa-facebook-f"></i>Facebook</a></li>
+            <li><a href="#"><i class="fa fa-brands fa-twitter"></i>Twitter</a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i>Instagram</a></li>
+            <li><a href="#"><i class="fa-brands fa-square-tumblr"></i>Tumblr</a></li>
+            <li><a href="#"><i class="fa-solid fa-skull-crossbones"></i>Click to shut up Meg</a></li>
+            <li><div class="divider"></div></li>
+            <li><a href=""><i class="fa-solid fa-mug-hot"></i>Buy me a coffee</a></li>
+            <li><a href="" class="dropdown-trigger" data-target="dropdown_links">Links <i class="material-icons right">arrow_drop_down</i> </a></li>
+        </ul>
+
+            <ul id="dropdown_links" class="dropdown-content">
+                <li><a href="file:///home/crimsonredargonaut/Documents/Programs/index.html">Index</a></li>
+                <li><a href="file:///home/crimsonredargonaut/Documents/Programs/page-1.html">Collections</a></li>
+                <li><a href="file:///home/crimsonredargonaut/Documents/Programs/media-css.html">Media CSS</a></li>
+                <li><a href="file:///home/crimsonredargonaut/Documents/Programs/material-box.html">Material Box</a></li>
+            </ul>
+        <main>
+            <!-- <iframe src="https://chromedino.com/mario/" frameborder="0" scrolling="no" width="100%" height="100%" loading="lazy"></iframe> -->
+            
+            <div class="fixed-action-btn toolbar">
+                <a class="btn-floating btn-large red">
+                <i class="large material-icons">mode_edit</i>
+                </a>
+                <ul>
+                <li><a class="btn-floating"><i class="material-icons">insert_chart</i></a></li>
+                <li><a class="btn-floating"><i class="material-icons">format_quote</i></a></li>
+                <li><a class="btn-floating"><i class="material-icons">publish</i></a></li>
+                <li><a class="btn-floating"><i class="material-icons">attach_file</i></a></li>
+                </ul>
+            </div>      
+        </main>
+    </body>
+</html>
